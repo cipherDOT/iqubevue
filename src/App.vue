@@ -1,6 +1,6 @@
 <script>
 import { initializeApp } from 'firebase/app'
-import { getFirestore, setDoc, doc } from 'firebase/firestore/lite'
+import { getFirestore, setDoc, doc, addDoc } from 'firebase/firestore/lite'
 
 const config_vars = {
     "apiKey": "AIzaSyAgPotrNQzZcM22I6a5Ic_v-fp1DDSUwRA",
@@ -35,7 +35,7 @@ export default {
 	methods: {
 		add() {
 			if (this.user_data.password1 == this.user_data.password2) {
-				setDoc(doc(db, "data", "hBxRvymVDtyBPt0hhuQn"), this.user_data)
+				addDoc(doc(db, "data", "hBxRvymVDtyBPt0hhuQn"), this.user_data)
                 Object.keys(this.user_data).forEach(x => {
                     this.user_data[x] = ''
                 })
