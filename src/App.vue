@@ -3,14 +3,15 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore, setDoc, doc, addDoc } from 'firebase/firestore/lite'
 
 const config_vars = {
-    "apiKey": "AIzaSyAgPotrNQzZcM22I6a5Ic_v-fp1DDSUwRA",
+    "apiKey": "***********************************",
+    // same database, different platform...
     "authDomain": "iqubedj.firebaseapp.com",
     "projectId": "iqubedj",
-    "storageBucket": "iqubedj.appspot.com",
-    "messagingSenderId": "635827728558",
-    "appId": "1:635827728558:web:c2af1752d667eb61a4fd3f",
-    "measurementId": "G-HQ300JWPHP",
-    "databaseURL" : "https://iqubedj-default-rtdb.firebaseio.com/",
+    "storageBucket": ""***********************************",
+    "messagingSenderId": ""***********************************",
+    "appId": ""***********************************",
+    "measurementId": ""***********************************",
+    "databaseURL" : ""***********************************",
 }
 
 let firebaseApp = initializeApp(config_vars);
