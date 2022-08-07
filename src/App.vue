@@ -7,11 +7,11 @@ const config_vars = {
     // same database, different platform...
     "authDomain": "iqubedj.firebaseapp.com",
     "projectId": "iqubedj",
-    "storageBucket": ""***********************************",
-    "messagingSenderId": ""***********************************",
-    "appId": ""***********************************",
-    "measurementId": ""***********************************",
-    "databaseURL" : ""***********************************",
+    "storageBucket": "***********************************",
+    "messagingSenderId": "***********************************",
+    "appId": "***********************************",
+    "measurementId": "***********************************",
+    "databaseURL" : "***********************************",
 }
 
 let firebaseApp = initializeApp(config_vars);
