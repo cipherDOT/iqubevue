@@ -35,7 +35,7 @@ export default {
 	methods: {
 		add() {
 			if (this.user_data.password1 == this.user_data.password2) {
-				addDoc(doc(db, "data", "hBxRvymVDtyBPt0hhuQn"), this.user_data)
+				setDoc(doc(db, "data", "hBxRvymVDtyBPt0hhuQn"), this.user_data)
                 Object.keys(this.user_data).forEach(x => {
                     this.user_data[x] = ''
                 })
